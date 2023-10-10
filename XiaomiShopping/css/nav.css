@@ -47,7 +47,9 @@
     border: 1px solid #e0e0e0;
     border-right: 0;
     transition: all .4s;
+    outline: none;
 }
+
 
 .nav_search_btn {
     float: left;
@@ -76,4 +78,15 @@
 
 .nav_search:hover .nav_search_btn i {
     color: #fff;
+}
+
+.nav_search_bar:focus {
+    border: 1px solid #ff6700;
+    border-right: 0;
+}
+
+/* focus-within 是 CSS 的伪类，用于匹配拥有子元素获取焦点的父元素。在这个情况下，你希望按钮在输入框或按钮本身获得焦点时都能应用样式，因此你将 :focus-within 伪类应用于包含它们的共同父元素 .nav_search。 */
+.nav_search:focus-within .nav_search_btn {
+    border: 1px solid #ff6700;
+    background-color: #fff;
 }
