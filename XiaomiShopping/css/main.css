@@ -1,0 +1,126 @@
+.main {
+    /* 处理外边距合并问题 */
+    overflow: hidden;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.main .middle {
+    height: 120px;
+    margin-top: 20px;
+    background: url(../images/middle.jpg);
+    background-position: center;
+}
+
+.sell_phone {
+    margin-top: 20px;
+}
+
+.sell_phone .sell_phone_content {
+    height: 50px;
+    line-height: 50px;
+}
+
+.sell_phone .sell_phone_content h2 {
+    float: left;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.sell_phone .sell_phone_content a {
+    float: right;
+    font: 16px;
+    transition: all .4s;
+}
+
+.sell_phone .sell_phone_content a .circle_row {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #b0b0b0;
+    text-align: center;
+    line-height: 16px;
+    transition: all .4s;
+}
+
+.sell_phone .sell_phone_content a .circle_row i {
+    font-size: 12px;
+}
+
+.sell_phone .sell_phone_content a:hover {
+    color: #ff6700;
+}
+
+.sell_phone .sell_phone_content a:hover .circle_row {
+    color: #fff;
+    background-color: #ff6700;
+}
+
+.sell_phone .sell_phone_main {
+    height: 614px;
+}
+
+.sell_phone .sell_phone_main .left {
+    float: left;
+    display: block;
+    width: 220px;
+    height: 100%;
+    background: url(../images/left.jpg);
+    background-size: 100%;
+    background-position: center;
+    transition: all .4s;
+}
+
+.sell_phone .sell_phone_main .right {
+    float: left;
+    width: 980px;
+    height: 100px;
+    text-align: center;
+}
+
+.sell_phone .sell_phone_main .right a {
+    display: block;
+    float: left;
+    width: 235px;
+    height: 300px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: all .4s;
+}
+
+.sell_phone .sell_phone_main .right img {
+    height: 160px;
+    margin: 20px;
+}
+
+.sell_phone .sell_phone_main .right h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #373737;
+}
+
+.sell_phone .sell_phone_main .right p {
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #b0b7cc;
+}
+
+.sell_phone .sell_phone_main .right span {
+    font-size: 14px;
+    color: #ff6700;
+}
+
+.sell_phone .sell_phone_main .right .pre {
+    margin-left: 5px;
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #b0b7cc;
+}
+
+.sell_phone_main a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    transform: translateY(-5px);
+}

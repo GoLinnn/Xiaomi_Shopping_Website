@@ -1,0 +1,189 @@
+.header {
+    height: 440px;
+    background: url(../images/banner.jpeg);
+    background-size: 100%;
+}
+
+.dropdown {
+    float: left;
+    padding: 20px 0;
+    width: 220px;
+    background-color: #a5a3a3;
+}
+
+.dropdown li a {
+    /*链接转换为块级元素*/
+    display: block;
+    color: white;
+    background-color: #a5a3a3;
+    height: 40px;
+    font-size: 14px;
+    /*设置行高等于块高，实现文字垂直居中*/
+    line-height: 40px;
+    /*text-indent: 2em;*/
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: rgb(255, 111, 0);
+}
+
+.dropdown li i {
+    float: right;
+    margin-right: 20px;
+    font-size: 5px;
+}
+
+.banner {
+    position: relative;
+    float: right;
+    width: 980px;
+    height: 100%;
+}
+
+.banner .row {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 70px;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: center;
+    line-height: 70px;
+}
+
+.banner .row1 {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.banner .row2 {
+    right: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.banner .row i {
+    font-size: 30px;
+    color: #d5d3d2;
+}
+
+.banner .row1 i {
+    /* 图标水平翻转要加block */
+    display: block;
+    transform: scaleX(-1);
+}
+
+.banner .row:hover i {
+    color: #dedcda;
+}
+
+.banner .row:hover {
+    background-color: rgba(105, 96, 84, .7);
+}
+
+.choose {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.choose li {
+    float: left;
+}
+
+.choose li a {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 2px solid #a59e94;
+    background-color: #898c92;
+}
+
+.choose li .selected {
+    background-color: #ecf1fa;
+}
+
+/* hot_sell */
+.hot_sell {
+    height: 170px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hot_sell_nav {
+    float: left;
+    height: 100%;
+    width: 220px;
+    background-color: #5f5750;
+}
+
+.hot_sell_nav li {
+    position: relative;
+    float: left;
+    width: 72px;
+    height: 85px;
+    /* 由于此处a中的图标与文字在不同行，所以不能用line-height来让a在视觉上垂直居中 */
+}
+
+/* 利用伪元素创建横断线 */
+.hot_sell_nav li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 64px;
+    height: 1px;
+    background-color: #665e57;
+}
+
+.hot_sell_nav li::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 1px;
+    height: 70px;
+    background-color: #665e57;
+}
+
+.hot_sell_nav li a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #b0ada9;
+    transition: all .4s;
+}
+
+.hot_sell_nav li i {
+    display: block;
+}
+
+.hot_sell_nav li a:hover {
+    color: #FFF;
+}
+
+.hot_sell_item {
+    float: left;
+    height: 100%;
+    width: 316px;
+    margin-left: 10px;
+}
+
+.item1 {
+    background: url(../images/hot_sell1.jpeg);
+    background-size: 100%;
+}
+
+.item2 {
+    background: url(../images/hot_sell2.jpg);
+    background-size: 100%;
+}
+
+.item3 {
+    background: url(../images/hot_sell3.png);
+    background-size: 100%;
+}
