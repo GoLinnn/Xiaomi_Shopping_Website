@@ -58,6 +58,19 @@
     background-color: #ff6700;
 }
 
+.sell .sell_content .sell_choose li a {
+    display: block;
+    height: 40px;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #424242;
+}
+
+.sell .sell_content .sell_choose li a:hover {
+    color: #ff6700;
+    border-bottom: 1px solid #ff6700;
+}
+
 .sell .sell_main {
     position: relative;
     height: 614px;
@@ -140,21 +153,49 @@
 }
 
 
-.sell .sell_content .sell_choose li a {
-    display: block;
-    height: 40px;
-    margin: 0 10px;
-    font-size: 16px;
-    color: #424242;
-}
-
-.sell .sell_content .sell_choose li a:hover {
-    color: #ff6700;
-    border-bottom: 1px solid #ff6700;
-}
-
 /* 纯CSS无法选择不同父盒子的子元素 */
 /* choose_watch和right_next位于不同的父盒子中，所以无法实现鼠标经过choose_watch，right_next显现的效果 */
 /* .sell .sell_choose .choose_watch:hover .right_next {
     visibility: visible;
 } */
+
+.sell .sell_main .right .sell_last a {
+    height: 145px;
+}
+
+.sell .sell_main .right .sell_last img {
+    float: right;
+    height: 80px;
+    margin: 30px 20px 30px 0;
+
+}
+
+.sell .sell_main .right .sell_last .last_left {
+    float: left;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.sell .sell_main .right .sell_last .more h2 {
+    font-size: 20px
+}
+
+.sell .sell_main .right .sell_last .more span {
+    color: #373737;
+}
+
+.sell .sell_main .right .sell_last i {
+    float: right;
+    margin: 15px 20px 30px 0;
+    font-size: 80px;
+    color: #ff6700;
+}
+
+/* 底部广告 */
+.bottom_ad {
+    height: 120px;
+    margin: 40px auto;
+    background: url(../images/ad.jpg);
+    background-position: center;
+}
